@@ -1,4 +1,4 @@
-CREATE TABLE person_resolution_service_metric
+CREATE TABLE IF NOT EXISTS person_resolution_service_metric
 (
     id                 BIGINT  NOT NULL,
     timestamp          TIMESTAMP WITHOUT TIME ZONE,
@@ -10,7 +10,7 @@ CREATE TABLE person_resolution_service_metric
     CONSTRAINT pk_personresolutionservicemetric PRIMARY KEY (id)
 );
 
-CREATE TABLE batch_loader_metric
+CREATE TABLE IF NOT EXISTS batch_loader_metric
 (
     id                BIGINT  NOT NULL,
     timestamp         TIMESTAMP WITHOUT TIME ZONE,
